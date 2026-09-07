@@ -1,39 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="نظام البحث عن الحيازات">
-  <title>بحث الحيازات</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>بحث الحيازات</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="container">
-    <section class="card">
-      <div class="logo">🚗</div>
-      <h1>بحث الحيازات</h1>
-      <p class="subtitle">ابحث بآخر 7 أرقام أو حروف من رقم الحيازة</p>
-
-      <form id="searchForm" autocomplete="off">
-        <label for="searchInput">رقم الحيازة</label>
-        <div class="search-row">
-          <input
-            id="searchInput"
-            type="text"
-            inputmode="text"
-            maxlength="100"
-            placeholder="مثال: C05638 أو 523464"
-            aria-label="رقم الحيازة"
-          >
-          <button type="submit">بحث</button>
-        </div>
-        <div class="hint">البحث غير حساس لحالة الأحرف ويقبل الحروف والأرقام.</div>
-      </form>
-
-      <div id="status" class="status" hidden></div>
-      <div id="results" class="results"></div>
-    </section>
-  </main>
-  <script src="app.js"></script>
+<main class="container">
+<section class="card">
+<div class="icon">🚗</div>
+<h1>بحث الحيازات</h1>
+<p class="subtitle">اكتب أي جزء من نهاية رقم الحيازة</p>
+<form id="searchForm">
+<input id="searchInput" type="text" inputmode="text" placeholder="مثال: 02558 أو 25583 أو C05638" autocomplete="off">
+<button type="submit">بحث</button>
+</form>
+<div id="status"></div>
+<div id="results"></div>
+</section>
+</main>
+<script src="app.js"></script>
 </body>
 </html>
